@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { ArrowRight, Github, Linkedin, Mail } from 'lucide-react';
+import profileImg from '../../public/profile.jpg';
 
 const Hero = () => {
   const containerVariants = {
@@ -44,7 +45,7 @@ const Hero = () => {
           <div className="relative w-48 h-48 md:w-56 md:h-56">
             <div className="absolute inset-0 bg-gradient-to-r from-cyber-blue via-cyber-purple to-cyber-pink rounded-lg blur-xl opacity-50"></div>
             <img
-              src="/profile.jpg"
+              src={profileImg}
               alt="Thomas L'hostete"
               className="relative w-full h-full object-cover rounded-lg border-2 border-cyber-blue/50"
             />
